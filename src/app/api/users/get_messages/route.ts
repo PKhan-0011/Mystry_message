@@ -66,3 +66,7 @@ export async function GET(request: NextRequest){
          });
       }
 }
+
+// session for frontend and getServerSession for Backend isse hamm generally 
+// karte ye hai ki kon sa user login hai ye pta kar lete hai okkh!.. 
+

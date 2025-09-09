@@ -106,8 +106,8 @@ export const SignUp = () => {
         // isme teen chize ati hai like form useEffect and onSubmit..,
 
      return (
-       <div className='flex justify-center items-center min-h-screen bg-gray-100'>
-             <div className='w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-md mb-8'>
+       <div className='flex justify-center items-center min-h-screen bg-indigoDark'>
+             <div className='w-full max-w-md p-8 space-y-8 bg-purple rounded-lg shadow-md mb-8'>
 
                     <div className='text-center'>
 
