@@ -82,7 +82,8 @@ export async function GET(request: NextRequest){
       if(!session || !user){
         // in dono m kuch galatiya hui to inko return karo ki isme kuch gdbd hai okkh!...
          return NextResponse.json({
-
+               message: 'session and user m kuch galatiya hai okkh!',
+               status: 501
          })
       }
 
