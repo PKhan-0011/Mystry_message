@@ -19,11 +19,11 @@ const Navbar = () => {
 
   return (
 
-    <nav className='p-4 md:p-6 shadow-md'>
+    <nav className='p-4 md:p-6 shadow-md relative z-50'>
         <div className='container mx-auto flex flex-col md:flex-row justify-between items-center'>
               <a 
                 className='text-4xl font-bold mb-4 md:mb-0'
-              href="#">Mystry Message</a>
+              href={"/"}>Mystry Message</a>
 
               {
                  session ? (
@@ -44,8 +44,10 @@ const Navbar = () => {
                     </>
                  )
               }   
-
         </div>
+         
+
+
     </nav>
 
   )
@@ -57,3 +59,4 @@ export default Navbar;
 // kahi p mugeh iska data store karna padega okkh! ans then use lena padega gotIt..
 
 // bhai dekh yha s jo User ayega usme sara data rahega like session token etc.. 
+

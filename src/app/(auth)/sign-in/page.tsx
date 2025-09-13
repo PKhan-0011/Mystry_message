@@ -132,7 +132,7 @@ const SignIn = () => {
                                     <div className='text-center mt-4"'>
                                         <p  className='text-[1.2rem]'>
                                          Not a membet yet: 
-                                         <Link href={'/sign-up'} className='text-blue-600 hover:text-blue-800'>  SignUp</Link>
+                                         <Link href={'/sign-Up'} className='text-blue-600 hover:text-blue-800'>  SignUp</Link>
                                         </p>
                                     </div>
 

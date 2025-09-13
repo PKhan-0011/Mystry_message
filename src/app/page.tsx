@@ -1,9 +1,17 @@
+'use client'
+
+import {BackgroundLinesDemo} from '@/components02/lineBackground'
 
 export default function Home() {
   return (
-    <div className="">
-        Hi there!...
-    </div>
+     <>
+          <div className='w-full max-h-screen'>
+                <div>
+                       <BackgroundLinesDemo />      
+                </div> 
+                 
+          </div>     
+     </>
   );
 }
 
