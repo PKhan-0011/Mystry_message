@@ -5,8 +5,8 @@ import {BackgroundLinesDemo} from '@/components02/lineBackground'
 export default function Home() {
   return (
      <>
-          <div className='w-full max-h-screen'>
-                <div>
+          <div className='w-full max-h-screen '>
+                <div className=''>
                        <BackgroundLinesDemo />      
                 </div> 
                  

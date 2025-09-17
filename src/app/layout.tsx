@@ -30,21 +30,25 @@ export default function RootLayout({
   return (
     <html lang="en">
 
+
       <AuthProvider>
+            
           <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >    
-           <Navbar />
-            
-
            <ThemeProvider
             attribute="class"
             defaultTheme="light"
-            enableSystem
+            enableSystem={true}
             disableTransitionOnChange
-          >
+          >   
 
-           <main className="min-h-screen relative z-10">
+           <Navbar />
+            
+           
+           
+
+           <main className="min-h-screen relative z-30 bg-white transition-colors duration-300">
                {children}
            </main>
 
@@ -55,6 +59,7 @@ export default function RootLayout({
               </ThemeProvider>
       </body>
       </AuthProvider>
+
     </html>
   );
 }

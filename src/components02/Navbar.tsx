@@ -46,7 +46,7 @@ const Navbar = () => {
                  )
               }   
         </div>
-         <ThemeButton/>
+         <ThemeButton />
     </nav>
 
   )

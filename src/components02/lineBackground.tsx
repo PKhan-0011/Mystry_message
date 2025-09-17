@@ -2,6 +2,7 @@ import React from "react";
 import { BackgroundLines } from "@/components/ui/background-lines";
 import Autoplay from "embla-carousel-autoplay";
 
+
 import {
   Carousel,
   CarouselContent,
@@ -22,7 +23,8 @@ import Link from 'next/link'
 
 export function BackgroundLinesDemo() {
   return (
-    <BackgroundLines className="flex  w-full flex-col px-4">
+
+    <BackgroundLines className="flex  w-full flex-col px-4 ">
             <section className="pointer-events-auto flex gap-4 w-full items-center justify-around px-8  py-12">
                       <div className="pt-14 pl-16 space-y-8">
                             <h1 className="text-2xl md:text-3xl lg:text-7xl  font-bold px-4 space-y-4 text-transparent bg-clip-text  bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white font-sans "> Your Mystry </h1>
@@ -42,6 +44,8 @@ export function BackgroundLinesDemo() {
                                                 Sign-Up
                                        </Link>
                                  </Button>
+
+                                
                                  
                              </div>
                       </div>
