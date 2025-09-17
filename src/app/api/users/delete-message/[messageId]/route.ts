@@ -33,8 +33,27 @@ export async function DELETE(request: NextRequest, {params}: {params: {messageId
       // agar in case session sahi hai to mugeh actaully data delete karna padega okkh!..
 
       try{
-           
+           const updatedResult =  await userModel.updateOne(
+            {
+                _id: user._id
+             },
+
+              {$pull : {messages: {_id: messagesId}}},
+              
+            );
+
+             if(updatedResult.modifiedCount == 0){
+                   return NextResponse.json({
+                    success: false,
+                    message: 'not autenticated'
+                   }, {status: 401})
+             }
+            return NextResponse.json({
+                message: 'message Deleted',
+                success: false,
+            }, {status: 201});
       }
+
       catch(error){
          const err = error as Error;
          console.log(err);
