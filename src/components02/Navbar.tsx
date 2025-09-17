@@ -5,6 +5,7 @@ import {useSession, signOut} from 'next-auth/react'
 import {User} from 'next-auth';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+import ThemeButton from '@/lib/ThemeButton';
 
 
 const Navbar = () => {
@@ -19,8 +20,8 @@ const Navbar = () => {
 
   return (
 
-    <nav className='p-4 md:p-6 shadow-md relative z-50'>
-        <div className='container mx-auto flex flex-col md:flex-row justify-between items-center'>
+    <nav className='p-4 md:p-6 shadow-md relative z-50 flex flex-row items-center gap-14 '>
+        <div className='container mx-auto flex flex-col md:flex-row justify-between items-center '>
               <a 
                 className='text-4xl font-bold mb-4 md:mb-0'
               href={"/"}>Mystry Message</a>
@@ -45,9 +46,7 @@ const Navbar = () => {
                  )
               }   
         </div>
-         
-
-
+         <ThemeButton/>
     </nav>
 
   )

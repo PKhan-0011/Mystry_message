@@ -16,6 +16,8 @@ module.exports = {
            indigoDark: '#E0E7FF',
            LightYellow: '#FFFBEB',
            light_dark: '#008156',
+           button_light: "#3B82F6",
+
        }
     },
   },
